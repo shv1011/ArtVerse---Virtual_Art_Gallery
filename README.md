@@ -4,8 +4,7 @@
 ArtVerse is a virtual art gallery platform that allows users to discover artworks, interact with the community, and share their thoughts about art.
 
 ## Features
-
--  ###**Artwork Gallery**
+  - Artwork Gallery
   - Browse featured artworks
   - Like your favorite pieces
   - View artwork details
