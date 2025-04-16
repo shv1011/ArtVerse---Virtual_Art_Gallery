@@ -5,20 +5,15 @@ ArtVerse is a virtual art gallery platform that allows users to discover artwork
 
 ## Features
 
--  **Artwork Gallery**
+-  ###**Artwork Gallery**
   - Browse featured artworks
   - Like your favorite pieces
   - View artwork details
-
--  **Community Interaction**
+  - Community Interaction
   - Post reviews and thoughts
   - Like community posts
   - Engage with other art enthusiasts
-
--  **User Authentication**
-  - Secure login/signup
-  - Persistent sessions
-  - User profiles
+  - User Authentication
 
 ## Getting Started
 
