@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ArtVerse | Virtual Art Gallery</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Raleway:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets\css\style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo" text-align="justify">ArtVerse</a>
+            <div class="search-bar">
+                <input type="text" placeholder="Search artists, artworks...">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+            <div class="nav-links">
+                <a href="pages\gallery.html">Gallery</a>
+                <a href="pages\exhibitions.html">Exhibitions</a>
+                <a href="pages\community.html">Community</a>
+                <a></a>
+                <div class="dropdown">
+                    <button class="dropbtn">Account <i class="fas fa-chevron-down"></i></button>
+                    <div class="dropdown-content">
+                        <a href="pages\login.html" id="login-btn">Login/Sign Up</a>
+                        <a href="#" id="creator-login-btn">Creator Portal</a>
+                    </div>
+                </div>
+                <a href="#" class="cart-btn"><i class="fas fa-shopping-cart"></i> <span class="cart-count">0</span></a>
+            </div>
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Discover & Collect <span>Extraordinary</span> Art</h1>
+            <p>Explore a world of creativity from emerging and established artists worldwide</p>
+            <div class="hero-btns">
+                <a href="#gallery" class="btn-primary">Explore Artworks</a>
+                <a href="#exhibitions" class="btn-secondary">View Exhibitions</a>
+            </div>
+        </div>
+        <div class="hero-slider">
+            <div class="slide active" style="background-image: url('images/hero1.jpg');"></div>
+            <div class="slide" style="background-image: url('images/hero2.jpg');"></div>
+            <div class="slide" style="background-image: url('images/hero3.jpg');"></div>
+        </div>
+        <div class="slider-dots">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery-section">
+        <div class="section-header">
+            <h2>Featured Artworks</h2>
+            <div class="filter-options">
+                <select id="category-filter">
+                    <option value="all">All Categories</option>
+                    <option value="painting">Paintings</option>
+                    <option value="photography">Photography</option>
+                    <option value="sculpture">Sculpture</option>
+                    <option value="digital">Digital Art</option>
+                </select>
+                <select id="price-filter">
+                    <option value="all">All Prices</option>
+                    <option value="0-100">Under ₹1000</option>
+                    <option value="100-500">₹1000 - ₹5000</option>
+                    <option value="500-1000">₹5000 - ₹10000</option>
+                    <option value="1000+">Over ₹10000</option>
+                </select>
+            </div>
+        </div>
+        <div class="artworks-grid">
+            <!-- Artwork 1 -->
+            <div class="artwork-card">
+                <div class="artwork-img">
+                    <img src="assets/images/starry_night.jpg" alt="Starry Night Reflections">
+                </div>
+                <div class="artwork-info">
+                    <h3 class="artwork-title">Starry Night Reflections</h3>
+                    <span class="artwork-artist">Sarah Jadav</span>
+                    <div class="artwork-price">₹9,500 <span class="original-price">₹12,000</span></div>
+                    <div class="artwork-actions">
+                        <button class="btn-secondary view-artwork" data-id="1">View Details</button>
+                        <button class="btn-primary add-to-cart" data-id="1">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Artwork 2 -->
+            <div class="artwork-card">
+                <div class="artwork-img">
+                    <img src="assets/images/urban_jungle.jpg" alt="Urban Jungle">
+                </div>
+                <div class="artwork-info">
+                    <h3 class="artwork-title">Urban Jungle</h3>
+                    <span class="artwork-artist">Michael jackson</span>
+                    <div class="artwork-price">₹7,500</div>
+                    <div class="artwork-actions">
+                        <button class="btn-secondary view-artwork" data-id="2">View Details</button>
+                        <button class="btn-primary add-to-cart" data-id="2">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Artwork 3 -->
+            <div class="artwork-card">
+                <div class="artwork-img">
+                    <img src="assets/images/eternal_flow.jpg" alt="Eternal Flow">
+                </div>
+                <div class="artwork-info">
+                    <h3 class="artwork-title">Eternal Flow</h3>
+                    <span class="artwork-artist">Esha Patel</span>
+                    <div class="artwork-price">₹12,000</div>
+                    <div class="artwork-actions">
+                        <button class="btn-secondary view-artwork" data-id="3">View Details</button>
+                        <button class="btn-primary add-to-cart" data-id="3">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Artwork 4 -->
+            <div class="artwork-card">
+                <div class="artwork-img">
+                    <img src="assets/images/digital_dream.jpg" alt="Digital Dreams">
+                </div>
+                <div class="artwork-info">
+                    <h3 class="artwork-title">Digital Dreams</h3>
+                    <span class="artwork-artist">Alex Turner</span>
+                    <div class="artwork-price">₹4,500</div>
+                    <div class="artwork-actions">
+                        <button class="btn-secondary view-artwork" data-id="4">View Details</button>
+                        <button class="btn-primary add-to-cart" data-id="4">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="load-more">
+            <button id="load-more-btn" class="btn-secondary">Load More</button>
+        </div>
+    </section>
+
+    <!-- Exhibitions Section -->
+    <section id="exhibitions" class="exhibitions-section">
+        <div class="section-header">
+            <h2>Current & Upcoming Exhibitions</h2>
+            <a href="#" class="view-all">View All</a>
+        </div>
+        <div class="exhibitions-tabs">
+            <button class="tab-btn active" data-tab="current">Current</button>
+            <button class="tab-btn" data-tab="upcoming">Upcoming</button>
+            <button class="tab-btn" data-tab="past">Past</button>
+        </div>
+        <div class="exhibitions-container">
+            <div class="tab-content active" id="current">
+                <!-- Current exhibitions will be loaded here -->
+            </div>
+            <div class="tab-content" id="upcoming">
+                <!-- Upcoming exhibitions will be loaded here -->
+            </div>
+            <div class="tab-content" id="past">
+                <!-- Past exhibitions will be loaded here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Creator Login Modal -->
+    <div id="creator-login-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Creator Portal</h2>
+            <div class="creator-tabs">
+                <button class="creator-tab-btn active" data-tab="creator-login">Login</button>
+                <button class="creator-tab-btn" data-tab="creator-signup">Apply</button>
+            </div>
+            <div class="creator-tab-content active" id="creator-login">
+                <form id="creator-login-form">
+                    <div class="form-group">
+                        <label for="creator-email">Email</label>
+                        <input type="email" id="creator-email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="creator-password">Password</label>
+                        <input type="password" id="creator-password" required>
+                    </div>
+                    <button type="submit" class="btn-primary">Login as Creator</button>
+                    <div class="form-footer">
+                        <a href="#" class="forgot-password">Forgot password?</a>
+                    </div>
+                </form>
+            </div>
+            <div class="creator-tab-content" id="creator-signup">
+                <p>Apply to become a creator on ArtVerse. Our team will review your application and get back to you within 3-5 business days.</p>
+                <form id="creator-application-form">
+                    <div class="form-group">
+                        <label for="application-name">Full Name</label>
+                        <input type="text" id="application-name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="application-email">Email</label>
+                        <input type="email" id="application-email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="application-portfolio">Portfolio Link</label>
+                        <input type="url" id="application-portfolio" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="application-bio">Artist Bio</label>
+                        <textarea id="application-bio" rows="4" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="application-samples">Upload Sample Artwork (Max 5MB)</label>
+                        <input type="file" id="application-samples" accept="image/*" required>
+                    </div>
+                    <button type="submit" class="btn-primary">Submit Application</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Artwork Detail Modal -->
+    <div id="artwork-modal" class="modal artwork-modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="artwork-detail">
+                <div class="artwork-images">
+                    <div class="main-image">
+                        <img src="images/artwork1.jpg" alt="Artwork" id="main-artwork-img">
+                    </div>
+                    <div class="thumbnail-images">
+                        <img src="images/artwork1-thumb1.jpg" alt="Thumbnail">
+                        <img src="images/artwork1-thumb2.jpg" alt="Thumbnail">
+                        <img src="images/artwork1-thumb3.jpg" alt="Thumbnail">
+                    </div>
+                </div>
+                <div class="artwork-info">
+                    <h2 id="artwork-title">Starry Night Reflections</h2>
+                    <div class="artist-info">
+                        <img src="images/artist1.jpg" alt="Artist">
+                        <div>
+                            <h3 id="artist-name">Sarah Johnson</h3>
+                            <span class="followers">12.5k followers</span>
+                        </div>
+                        <button class="follow-btn">Follow</button>
+                    </div>
+                    <div class="artwork-meta">
+                        <div class="meta-item">
+                            <span>Category</span>
+                            <strong>Oil Painting</strong>
+                        </div>
+                        <div class="meta-item">
+                            <span>Year</span>
+                            <strong>2025</strong>
+                        </div>
+                        <div class="meta-item">
+                            <span>Size</span>
+                            <strong>24" x 36"</strong>
+                        </div>
+                    </div>
+                    <p class="artwork-description">
+                        This vibrant oil painting captures the essence of a starry night reflected on a tranquil lake. 
+                        Created with thick impasto techniques, the piece plays with light and texture to create a 
+                        mesmerizing effect that changes with the viewer's perspective.
+                    </p>
+                    <div class="artwork-purchase">
+                        <div class="price">
+                            <span class="original-price">₹12,000</span>
+                            <span class="sale-price">₹9,500</span>
+                        </div>
+                        <div class="availability">
+                            <i class="fas fa-check-circle"></i> <span>Available</span>
+                        </div>
+                        <div class="purchase-options">
+                            <button class="btn-primary"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                            <button class="btn-secondary">Make Offer</button>
+                        </div>
+                        <div class="wishlist">
+                            <button><i class="far fa-heart"></i> Add to Wishlist</button>
+                        </div>
+                    </div>
+                    <div class="artwork-shipping">
+                        <div class="shipping-info">
+                            <i class="fas fa-truck"></i>
+                            <div>
+                                <strong>Free shipping</strong>
+                                <span>Estimated delivery: 5-7 business days</span>
+                            </div>
+                        </div>
+                        <div class="return-info">
+                            <i class="fas fa-undo"></i>
+                            <div>
+                                <strong>14-day returns</strong>
+                                <span>Money back guarantee</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Exhibition Detail Modal -->
+    <div class="exhibitions-grid">
+        <!-- Exhibition 1 -->
+        <div class="exhibition-card">
+            <div class="exhibition-image" style="background-image: url('assets\images\city_rhythms.jpg')"></div>
+            <div class="exhibition-info">
+                <h3>Modern Perspectives</h3>
+                <div class="exhibition-meta">
+                    <div class="meta-item">
+                        <i class="far fa-calendar"></i>
+                        <span>June 15 - July 30, 2025</span>
+                    </div>
+                    <div class="meta-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Downtown Contemporary Gallery, New York</span>
+                    </div>
+                </div>
+                <p>This exhibition brings together 15 emerging artists exploring contemporary themes through diverse mediums.</p>
+                <div class="exhibition-artists">
+                    <h4>Featured Artists:</h4>
+                    <div class="artists-list">
+                        <span>Sarah Johnson</span>
+                        <span>Michael Chen</span>
+                        <span>Emma Rodriguez</span>
+                    </div>
+                </div>
+                <button class="btn-primary view-exhibition">View Details</button>
+            </div>
+        </div>
+
+        <!-- Exhibition 2 -->
+        <div class="exhibition-card">
+            <div class="exhibition-image" style="background-image: url('../assets/images/starry_night.jpg')"></div>
+            <div class="exhibition-info">
+                <h3>Abstract Visions</h3>
+                <div class="exhibition-meta">
+                    <div class="meta-item">
+                        <i class="far fa-calendar"></i>
+                        <span>May 1 - June 30, 2025</span>
+                    </div>
+                    <div class="meta-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Metropolitan Art Space, Chicago</span>
+                    </div>
+                </div>
+                <p>A celebration of abstract art featuring works from both established and emerging abstract artists.</p>
+                <div class="exhibition-artists">
+                    <h4>Featured Artists:</h4>
+                    <div class="artists-list">
+                        <span>Alex Turner</span>
+                        <span>Sophia Williams</span>
+                    </div>
+                </div>
+                <button class="btn-primary view-exhibition">View Details</button>
+            </div>
+        </div>
+
+        <!-- Exhibition 3 -->
+        <div class="exhibition-card">
+            <div class="exhibition-image" style="background-image: url('../assets/images/exhibition3.jpg')"></div>
+            <div class="exhibition-info">
+                <h3>Nature's Palette</h3>
+                <div class="exhibition-meta">
+                    <div class="meta-item">
+                        <i class="far fa-calendar"></i>
+                        <span>August 5 - September 20, 2025</span>
+                    </div>
+                    <div class="meta-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Greenwood Gallery, San Francisco</span>
+                    </div>
+                </div>
+                <p>Exploring the colors and forms of nature through various artistic interpretations.</p>
+                <div class="exhibition-artists">
+                    <h4>Featured Artists:</h4>
+                    <div class="artists-list">
+                        <span>David Kim</span>
+                        <span>Sarah Johnson</span>
+                    </div>
+                </div>
+                <button class="btn-primary view-exhibition">View Details</button>
+            </div>
+        </div>
+
+        <!-- Exhibition 4 -->
+        <div class="exhibition-card">
+            <div class="exhibition-image" style="background-image: url('../assets/images/exhibition4.jpg')"></div>
+            <div class="exhibition-info">
+                <h3>Urban Expressions</h3>
+                <div class="exhibition-meta">
+                    <div class="meta-item">
+                        <i class="far fa-calendar"></i>
+                        <span>March 10 - April 25, 2025</span>
+                    </div>
+                    <div class="meta-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>City Arts Center, Los Angeles</span>
+                    </div>
+                </div>
+                <p>Showcasing artworks inspired by urban life and city landscapes.</p>
+                <div class="exhibition-artists">
+                    <h4>Featured Artists:</h4>
+                    <div class="artists-list">
+                        <span>Michael Chen</span>
+                        <span>Emma Rodriguez</span>
+                        <span>Alex Turner</span>
+                    </div>
+                </div>
+                <button class="btn-primary view-exhibition">View Details</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="load-more">
+        <button id="load-more-btn" class="btn-secondary">Load More Exhibitions</button>
+    </div>
+</div>
+</section>
+
+<!-- Exhibition Modal -->
+<div id="exhibition-modal" class="modal">
+    <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <div class="modal-body">
+            <div class="modal-gallery">
+                <div class="main-image" style="background-image: url('assets/images/starry_night.jpg')"></div>
+                <div class="thumbnail-container">
+                    <div class="thumbnail active" style="background-image: url('assets/images/starry_night.jpg')"></div>
+                    <div class="thumbnail" style="background-image: url('assets/images/urban_jungle.jpg')"></div>
+                    <div class="thumbnail" style="background-image: url('assets/images/eternal_flow.jpg')"></div>
+                </div>
+            </div>
+            <div class="modal-info">
+                <h2>Modern Masters Exhibition</h2>
+                <div class="exhibition-meta">
+                    <div class="meta-item">
+                        <i class="fas fa-calendar-alt"></i>
+                        <span>May 1 - June 30, 2025</span>
+                    </div>
+                    <div class="meta-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Main Gallery Hall</span>
+                    </div>
+                </div>
+                <div class="exhibition-description">
+                    <p>Explore the works of contemporary masters who are redefining the boundaries of modern art. This exhibition features a diverse collection of works from established and emerging artists, showcasing innovative techniques and thought-provoking themes.</p>
+                </div>
+                <div class="featured-artists">
+                    <h3>Featured Artists</h3>
+                    <div class="artists-list">
+                        <div class="artist-item">
+                            <img src="assets/images/starry_night.jpg" alt="Sarah Jadav">
+                            <span>Sarah Jadav</span>
+                        </div>
+                        <div class="artist-item">
+                            <img src="assets/images/urban_jungle.jpg" alt="Alex Turner">
+                            <span>Alex Turner</span>
+                        </div>
+                        <div class="artist-item">
+                            <img src="assets/images/eternal_flow.jpg" alt="David Kim">
+                            <span>David Kim</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-actions">
+                    <button class="btn-primary">Book Tickets</button>
+                    <button class="btn-secondary">Share Exhibition</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>ArtVerse</h3>
+                <p>Discover, collect, and connect with extraordinary art and artists from around the world.</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-pinterest"></i></a>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h3>Explore</h3>
+                <ul>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#exhibitions">Exhibitions</a></li>
+                    <li><a href="#community">Community</a></li>
+                    <li><a href="#">Featured Artists</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Company</h3>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Press</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Support</h3>
+                <ul>
+                    <li><a href="#">Help Center</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Shipping & Returns</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 ArtVerse. All rights reserved.</p>
+            <div class="payment-methods">
+                <i class="fab fa-cc-visa"></i>
+                <i class="fab fa-cc-mastercard"></i>
+                <i class="fab fa-cc-amex"></i>
+                <i class="fab fa-cc-paypal"></i>
+                <i class="fab fa-cc-stripe"></i>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="assets\js\script.js"></script>
+</body>
+</html>

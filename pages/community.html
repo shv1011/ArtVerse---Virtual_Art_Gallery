@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community - Virtual Art Gallery</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="/index.html" class="logo" text-align="justify">ArtVerse</a>
+            <div class="search-bar">
+                <input type="text" placeholder="Search artists, artworks...">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+            <div class="nav-links">
+                <a href="gallery.html">Gallery</a>
+                <a href="exhibitions.html">Exhibitions</a>
+                <a href="community.html">Community</a>
+                <a></a>
+                <div class="dropdown">
+                    <button class="dropbtn">Account <i class="fas fa-chevron-down"></i></button>
+                    <div class="dropdown-content">
+                        <a href="login.html" id="login-btn">Login/Sign Up</a>
+                        <a href="#" id="creator-login-btn">Creator Portal</a>
+                    </div>
+                </div>
+                <a href="#" class="cart-btn"><i class="fas fa-shopping-cart"></i> <span class="cart-count">0</span></a>
+            </div>
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Community Section -->
+    <section class="community-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Community</h2>
+                <div class="community-tabs">
+                    <button class="tab-btn active" data-tab="discussions">Discussions</button>
+                    <button class="tab-btn" data-tab="events">Events</button>
+                    <button class="tab-btn" data-tab="artists">Artists</button>
+                </div>
+            </div>
+
+            <div class="tab-content active" id="discussions">
+                <div class="discussions-list">
+                    <!-- Discussion 1 -->
+                    <div class="discussion-item">
+                        <div class="discussion-content">
+                            <h3>Exploring Abstract Expressionism</h3>
+                            <span class="author">by Sarah Jadav</span>
+                            <p>Let's discuss the evolution of abstract expressionism and its impact on modern art. Share your favorite artists and works!</p>
+                        </div>
+                        <div class="discussion-stats">
+                            <div class="stat">
+                                <i class="far fa-comment"></i>
+                                <span>24</span>
+                            </div>
+                            <div class="stat">
+                                <i class="far fa-eye"></i>
+                                <span>156</span>
+                            </div>
+                            <span class="last-activity">2 hours ago</span>
+                        </div>
+                    </div>
+
+                    <!-- Discussion 2 -->
+                    <div class="discussion-item">
+                        <div class="discussion-content">
+                            <h3>Digital Art Tools and Techniques</h3>
+                            <span class="author">by Alex Turner</span>
+                            <p>What are your favorite digital art tools and techniques? Let's share tips and resources for digital artists.</p>
+                        </div>
+                        <div class="discussion-stats">
+                            <div class="stat">
+                                <i class="far fa-comment"></i>
+                                <span>18</span>
+                            </div>
+                            <div class="stat">
+                                <i class="far fa-eye"></i>
+                                <span>98</span>
+                            </div>
+                            <span class="last-activity">5 hours ago</span>
+                        </div>
+                    </div>
+
+                    <!-- Discussion 3 -->
+                    <div class="discussion-item">
+                        <div class="discussion-content">
+                            <h3>Art Market Trends 2025</h3>
+                            <span class="author">by David Kim</span>
+                            <p>Let's analyze the current trends in the art market and discuss what's driving the industry forward.</p>
+                        </div>
+                        <div class="discussion-stats">
+                            <div class="stat">
+                                <i class="far fa-comment"></i>
+                                <span>32</span>
+                            </div>
+                            <div class="stat">
+                                <i class="far fa-eye"></i>
+                                <span>210</span>
+                            </div>
+                            <span class="last-activity">1 day ago</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-content" id="events">
+                <div class="events-grid">
+                    <!-- Event 1 -->
+                    <div class="event-card">
+                        <div class="event-image" style="background-image: url('../assets/images/starry_night.jpg')"></div>
+                        <div class="event-info">
+                            <h3>Virtual Art Workshop</h3>
+                            <div class="event-meta">
+                                <div class="meta-item">
+                                    <i class="far fa-calendar"></i>
+                                    <span>June 20, 2025</span>
+                                </div>
+                                <div class="meta-item">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>Online Event</span>
+                                </div>
+                                <div class="meta-item">
+                                    <i class="fas fa-users"></i>
+                                    <span>45 attending</span>
+                                </div>
+                            </div>
+                            <button class="btn-primary">RSVP</button>
+                        </div>
+                    </div>
+
+                    <!-- Event 2 -->
+                    <div class="event-card">
+                        <div class="event-image" style="background-image: url('../assets/images/urban_jungle.jpg')"></div>
+                        <div class="event-info">
+                            <h3>Artist Meetup</h3>
+                            <div class="event-meta">
+                                <div class="meta-item">
+                                    <i class="far fa-calendar"></i>
+                                    <span>July 5, 2025</span>
+                                </div>
+                                <div class="meta-item">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>Downtown Gallery, New York</span>
+                                </div>
+                                <div class="meta-item">
+                                    <i class="fas fa-users"></i>
+                                    <span>28 attending</span>
+                                </div>
+                            </div>
+                            <button class="btn-primary">RSVP</button>
+                        </div>
+                    </div>
+
+                    <!-- Event 3 -->
+                    <div class="event-card">
+                        <div class="event-image" style="background-image: url('../assets/images/eternal_flow.jpg')"></div>
+                        <div class="event-info">
+                            <h3>Digital Art Exhibition</h3>
+                            <div class="event-meta">
+                                <div class="meta-item">
+                                    <i class="far fa-calendar"></i>
+                                    <span>July 15, 2025</span>
+                                </div>
+                                <div class="meta-item">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>Modern Art Museum, London</span>
+                                </div>
+                                <div class="meta-item">
+                                    <i class="fas fa-users"></i>
+                                    <span>62 attending</span>
+                                </div>
+                            </div>
+                            <button class="btn-primary">RSVP</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-content" id="artists">
+                <div class="artists-grid">
+                    <!-- Artist 1 -->
+                    <div class="artist-card">
+                        <img src="../assets/images/artist2.jpg" alt="Sarah Jadav">
+                        <h3>Sarah Jadav</h3>
+                        <span class="artist-category">Abstract Artist</span>
+                        <div class="artist-stats">
+                            <div class="stat">
+                                <span class="stat-number">1.2k</span>
+                                <span class="stat-label">Followers</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">45</span>
+                                <span class="stat-label">Artworks</span>
+                            </div>
+                        </div>
+                        <button class="follow-btn">Follow</button>
+                    </div>
+
+                    <!-- Artist 2 -->
+                    <div class="artist-card">
+                        <img src="../assets/images/artist1.avif" alt="Alex Turner">
+                        <h3>Alex Turner</h3>
+                        <span class="artist-category">Digital Artist</span>
+                        <div class="artist-stats">
+                            <div class="stat">
+                                <span class="stat-number">856</span>
+                                <span class="stat-label">Followers</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">32</span>
+                                <span class="stat-label">Artworks</span>
+                            </div>
+                        </div>
+                        <button class="follow-btn">Follow</button>
+                    </div>
+
+                    <!-- Artist 3 -->
+                    <div class="artist-card">
+                        <img src="../assets/images/artist3.jpg" alt="David Kim">
+                        <h3>David Kim</h3>
+                        <span class="artist-category">Contemporary Artist</span>
+                        <div class="artist-stats">
+                            <div class="stat">
+                                <span class="stat-number">2.1k</span>
+                                <span class="stat-label">Followers</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">78</span>
+                                <span class="stat-label">Artworks</span>
+                            </div>
+                        </div>
+                        <button class="follow-btn">Follow</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>ArtVerse</h3>
+                <p>Discover, collect, and connect with extraordinary art and artists from around the world.</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-pinterest"></i></a>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h3>Explore</h3>
+                <ul>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#exhibitions">Exhibitions</a></li>
+                    <li><a href="#community">Community</a></li>
+                    <li><a href="#">Featured Artists</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Company</h3>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Press</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Support</h3>
+                <ul>
+                    <li><a href="#">Help Center</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Shipping & Returns</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 ArtVerse. All rights reserved.</p>
+            <div class="payment-methods">
+                <i class="fab fa-cc-visa"></i>
+                <i class="fab fa-cc-mastercard"></i>
+                <i class="fab fa-cc-amex"></i>
+                <i class="fab fa-cc-paypal"></i>
+                <i class="fab fa-cc-stripe"></i>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../assets/js/script.js"></script>
+</body>
+</html> 
